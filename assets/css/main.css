@@ -1,28 +1,40 @@
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Montserrat",  sans-serif;
-  --nav-font: "Open Sans",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Montserrat", sans-serif;
+  --nav-font: "Open Sans", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #eab7100A; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #eab710; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #eab7100A;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #222222;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #eab710;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #eab710; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #222222; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: white; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #ffffff;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #eab710;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #222222;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: white;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -55,7 +67,7 @@
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
-  transition: all 0.5s; 
+  transition: all 0.5s;
   z-index: 997;
 }
 
@@ -168,7 +180,7 @@
     font-size: 12px;
   }
 
-  .navmenu a:hover{
+  .navmenu a:hover {
     color: white;
   }
 
@@ -364,7 +376,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* Adjust opacity as needed */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Adjust opacity as needed */
   z-index: 0;
 }
 
@@ -374,13 +387,16 @@
   z-index: 2;
   width: 50%;
   text-align: left;
-  padding: 2rem; /* Corrected to "2rem" */
+  padding: 2rem;
+  /* Corrected to "2rem" */
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 90vh;
-  align-self: flex-start;  /* This aligns the element to the left */
-  margin-left: 1%;         /* Optional: add extra left margin if needed */
+  align-self: flex-start;
+  /* This aligns the element to the left */
+  margin-left: 1%;
+  /* Optional: add extra left margin if needed */
 }
 
 
@@ -450,6 +466,7 @@
   0% {
     transform: translate(85px, 0%);
   }
+
   100% {
     transform: translate(-90px, 0%);
   }
@@ -459,6 +476,7 @@
   0% {
     transform: translate(-90px, 0%);
   }
+
   100% {
     transform: translate(85px, 0%);
   }
@@ -468,6 +486,7 @@
   0% {
     transform: translate(-90px, 0%);
   }
+
   100% {
     transform: translate(85px, 0%);
   }
@@ -477,12 +496,14 @@
 @media (max-width: 768px) {
   .hero-content {
     width: 90%;
-    text-align: center;
-    padding: 1.5rem;
+    text-align: start;
+    padding: 0.5rem;
   }
+
   .hero-text h1 {
-    font-size: 36px;
+    font-size: 30px;
   }
+
   .hero-text p {
     font-size: 1rem;
     max-width: 100%;
@@ -660,14 +681,14 @@ h6 {
 
 .footer .footer-about a {
   color: white;
-    font-size: 12px;
+  font-size: 12px;
   font-weight: 600;
   font-family: var(--heading-font);
 }
 
 
 
-.footer-about .sitename{
+.footer-about .sitename {
   color: white;
   font-size: 3svh;
 }
@@ -792,10 +813,12 @@ h6 {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Default: 2 columns */
+  grid-template-columns: repeat(2, 1fr);
+  /* Default: 2 columns */
   gap: 1rem;
   align-items: stretch;
-  margin: 10px 5% 80px 5%; /* Adjusted margins for better centering */
+  margin: 10px 5% 80px 5%;
+  /* Adjusted margins for better centering */
 }
 
 .service-card {
@@ -808,8 +831,10 @@ h6 {
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
-  min-height: 220px; /* Minimum height for uniformity */
-  height: 100%; /* Adaptive height */
+  min-height: 220px;
+  /* Minimum height for uniformity */
+  height: 100%;
+  /* Adaptive height */
 }
 
 
@@ -821,15 +846,16 @@ h6 {
   }
 
   .services-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2-column layout for tablets */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2-column layout for tablets */
     margin-bottom: 40px;
   }
-  
+
   .service-card {
     padding: 1.5rem;
     min-height: 200px;
   }
-  
+
   .service-card img {
     height: 200px;
   }
@@ -867,40 +893,45 @@ h6 {
   border-radius: 20px;
   padding: 0.4rem 0.8rem;
   font-size: 0.85rem;
-  border: 1.5px solid var(--accent-color); /* Adding a solid border */
+  border: 1.5px solid var(--accent-color);
+  /* Adding a solid border */
   color: #555;
 }
 
 /* Responsive adjustments */
-@media (max-width: 1024px) { 
+@media (max-width: 1024px) {
   .services-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2-column layout for tablets */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2-column layout for tablets */
     margin-bottom: 40px;
   }
-  
+
   .service-card {
     padding: 1.5rem;
     min-height: 200px;
   }
-  
+
   .service-card img {
     height: 200px;
   }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .services-grid {
-    grid-template-columns: 1fr; /* 1-column layout for mobile */
+    grid-template-columns: 1fr;
+    /* 1-column layout for mobile */
     gap: 1.5rem;
   }
-  
+
   .service-card {
-    flex-direction: column-reverse; /* Reverse order: image first */
+    flex-direction: column-reverse;
+    /* Reverse order: image first */
     text-align: center;
     padding: 1.5rem;
-    min-height: auto; /* Adaptive height for mobile */
+    min-height: auto;
+    /* Adaptive height for mobile */
   }
-  
+
   .service-card img {
     width: 150px;
     margin-left: 1.5rem;
@@ -930,57 +961,19 @@ h6 {
   background: #f1f1f5;
   border-radius: 20px;
   padding: 0.4rem 0.8rem;
-  border: 1.5px solid var(--accent-color); /* Adding a solid border */
+  border: 1.5px solid var(--accent-color);
+  /* Adding a solid border */
   color: #555;
 }
-
-
-/*--------------------------------------------------------------
-# Clients Section
---------------------------------------------------------------*/
-.clients {
-  padding: 25px 0;
-  margin-bottom: 50px;
-  background-color: white;
-}
-
-.clients .swiper {
-  padding: 10px 0;
-}
-
-.clients .swiper-wrapper {
-  height: auto;
-}
-
-.clients .swiper-slide img {
-  transition: 0.3s;
-}
-
-.clients .swiper-slide img:hover {
-  transform: scale(1.1);
-}
-
-.clients .swiper {
-  position: relative;
-  padding-bottom: 50px; /* Adds extra space at the bottom */
-}
-
-.clients .swiper-pagination {
-  position: absolute;
-  bottom: 0; /* Position at the bottom of the swiper container */
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  transform: translateY(20px); /* Pushes the dots further down */
-}
-
 
 
 /*--------------------------------------------------------------
 # Clients Section Base Styles
 --------------------------------------------------------------*/
 .clients {
+  /* Using a light background and consistent padding/margin */
   padding: 20px 0;
+  margin-bottom: 50px;
   background-color: #f8f9fa;
 }
 
@@ -990,7 +983,16 @@ h6 {
   padding: 0 20px;
 }
 
+/* Swiper (Carousel) Specific Styles */
+.clients .swiper {
+  position: relative;
+  padding: 10px 0;
+  padding-bottom: 50px;
+  /* Adds extra space at the bottom for pagination */
+}
+
 .clients .swiper-wrapper {
+  height: auto;
   display: flex;
   align-items: center;
 }
@@ -1001,11 +1003,23 @@ h6 {
   justify-content: center;
 }
 
-.clients .img-fluid {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  max-height: 100px;
+.clients .swiper-slide img {
+  transition: 0.3s;
+}
+
+.clients .swiper-slide img:hover {
+  transform: scale(1.1);
+}
+
+.clients .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  /* Position at the bottom of the swiper container */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(20px);
+  /* Pushes the dots further down */
 }
 
 /*--------------------------------------------------------------
@@ -1013,8 +1027,8 @@ h6 {
 --------------------------------------------------------------*/
 .clients-title {
   text-align: center;
-  padding-top: 0px;
-  margin-top: 100px;
+  padding-top: 0;
+  margin-top: 200px;
   margin-bottom: 50px;
   position: relative;
 }
@@ -1025,6 +1039,7 @@ h6 {
   font-weight: 700;
   padding: 8px 20px;
   margin: 0;
+  /* Using color-mix for background if supported */
   background: color-mix(in srgb, var(--accent-color), transparent 90%);
   color: var(--accent-color);
   display: inline-block;
@@ -1049,40 +1064,24 @@ h6 {
 Responsive Breakpoints for Clients Section
 --------------------------------------------------------------*/
 
-/* Small Mobile Screens (max-width: 480px) */
-@media (max-width: 480px) {
+
+/* Ultra Wide Desktops (min-width: 1440px) */
+@media (min-width: 1440px) {
   .clients {
+    margin: 30px 0 0 0;
     padding: 40px 0;
   }
-  .clients-title {
-    padding-top: 30px;
-    margin-bottom: 30px;
-  }
-  .clients-title h2 {
-    font-size: 14px;
-    padding: 6px 15px;
-  }
-  .clients-title p {
-    font-size: 24px;
-  }
-  .clients .img-fluid {
-    max-height: 70px;
-  }
-}
 
-/* Mobile & Tablet (max-width: 768px) */
-@media (max-width: 768px) {
-  .clients {
-    padding: 50px 0;
-  }
   .clients-title h2 {
-    font-size: 16px;
+    font-size: 13px;
   }
+
   .clients-title p {
-    font-size: 28px;
+    font-size: 30px;
   }
+
   .clients .img-fluid {
-    max-height: 80px;
+    max-height: 120px;
   }
 }
 
@@ -1091,34 +1090,72 @@ Responsive Breakpoints for Clients Section
   .clients {
     padding: 60px 0;
   }
+
   .clients-title h2 {
-    font-size: 17px;
+    font-size: 18px;
   }
+
   .clients-title p {
     font-size: 30px;
   }
+
   .clients .img-fluid {
     max-height: 90px;
   }
 }
 
-/* Ultra Wide Desktops (min-width: 1440px) */
-@media (min-width: 1440px) {
+/* Mobile & Tablet (max-width: 768px) */
+@media (max-width: 768px) {
   .clients {
-    margin: 30px 0px 0px 0px;
-    padding: 40px 0;
+    padding: 50px 0;
   }
+
   .clients-title h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
+
   .clients-title p {
-    font-size: 36px;
+    font-size: 28px;
   }
+
   .clients .img-fluid {
-    max-height: 120px;
+    max-height: 80px;
   }
 }
 
+/* Small Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .clients {
+    padding: 10px 0;
+  }
+
+  /* Swiper (Carousel) Specific Styles */
+  .clients .swiper {
+    position: relative;
+    padding: 10px 0;
+    padding-bottom: 0px;
+    /* Adds extra space at the bottom for pagination */
+  }
+
+  .clients-title {
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .clients-title h2 {
+    font-size: 10px;
+    padding: 6px 15px;
+    margin-bottom: 10px;
+  }
+
+  .clients-title p {
+    font-size: 20px;
+  }
+
+  .clients .img-fluid {
+    max-height: 50px;
+  }
+}
 
 /*--------------------------------------------------------------
 # About Section
@@ -1291,17 +1328,21 @@ Responsive Breakpoints
     padding: 40px 0;
     margin-top: 100px;
   }
+
   .testimonials .testimonial-img {
     width: 70px;
     border-width: 4px;
     margin-bottom: 10px;
   }
+
   .testimonials .testimonial-item h3 {
     font-size: 18px;
   }
+
   .testimonials .testimonial-item h4 {
     font-size: 12px;
   }
+
   .testimonials .testimonial-item p {
     font-size: 14px;
     max-width: 90%;
@@ -1314,12 +1355,15 @@ Responsive Breakpoints
     padding: 60px 0;
     margin-top: 120px;
   }
+
   .testimonials .testimonial-item h3 {
     font-size: 19px;
   }
+
   .testimonials .testimonial-item h4 {
     font-size: 13px;
   }
+
   .testimonials .testimonial-item p {
     font-size: 15px;
   }
@@ -1330,9 +1374,11 @@ Responsive Breakpoints
   .testimonials .container {
     padding: 0 15px;
   }
+
   .testimonials {
     margin-top: 130px;
   }
+
   .testimonials .testimonial-item p {
     max-width: 85%;
   }
@@ -1344,12 +1390,15 @@ Responsive Breakpoints
     padding: 100px 0;
     margin-top: 180px;
   }
+
   .testimonials .testimonial-item h3 {
     font-size: 22px;
   }
+
   .testimonials .testimonial-item h4 {
     font-size: 16px;
   }
+
   .testimonials .testimonial-item p {
     font-size: 17px;
     max-width: 70%;
@@ -1362,7 +1411,7 @@ Responsive Breakpoints
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
-.team{
+.team {
   margin-bottom: 0px;
 }
 
@@ -1448,7 +1497,7 @@ Responsive Breakpoints
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
-.faq{
+.faq {
   margin-bottom: 100px;
 }
 
@@ -1541,7 +1590,8 @@ Responsive Breakpoints
 --------------------------------------------------------------*/
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, #eab710, #c28808); /* Warm Golden Gradient */
+  background: linear-gradient(135deg, #eab710, #c28808);
+  /* Warm Golden Gradient */
   color: white;
   text-align: center;
   padding: 4rem 2rem;
@@ -1572,7 +1622,8 @@ Responsive Breakpoints
   gap: 1rem;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
   display: inline-block;
   padding: 12px 24px;
   font-size: 1rem;
@@ -1605,7 +1656,7 @@ Responsive Breakpoints
 /* Responsive */
 @media (max-width: 768px) {
   .cta-buttons {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -1629,11 +1680,14 @@ Responsive Breakpoints
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, 
-    #f7d36a 0%,    /* Light golden */
-    #eab710 50%,   /* Base color */
-    #b8860b 100%   /* Dark golden */
-  );
+  background: linear-gradient(90deg,
+      #f7d36a 0%,
+      /* Light golden */
+      #eab710 50%,
+      /* Base color */
+      #b8860b 100%
+      /* Dark golden */
+    );
 }
 
 .tech-grid {
@@ -1650,7 +1704,7 @@ Responsive Breakpoints
   border-radius: 16px;
   padding: 1.5rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   /* Allow overflow for tooltip */
@@ -1669,7 +1723,8 @@ Responsive Breakpoints
   border-radius: inherit;
   background: transparent;
   transition: background 0.5s;
-  z-index: 1; /* Behind content and tooltip */
+  z-index: 1;
+  /* Behind content and tooltip */
 }
 
 .tech-item:hover::before {
@@ -1728,7 +1783,7 @@ Responsive Breakpoints
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1.5rem;
   }
-  
+
   .tech-item {
     padding: 1rem;
   }
@@ -1739,7 +1794,7 @@ Responsive Breakpoints
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 1rem;
   }
-  
+
   .tech-item img {
     max-width: 60px;
   }
@@ -1749,7 +1804,7 @@ Responsive Breakpoints
   .technologies {
     padding: 3rem 1rem;
   }
-  
+
   .tech-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -2157,12 +2212,14 @@ Responsive Breakpoints
   position: relative;
   padding-inline: 1.5rem;
 }
+
 .timeline ul li .title {
   overflow: hidden;
   padding-block-start: 1.5rem;
   padding-block-end: 1rem;
   font-weight: 500;
 }
+
 .timeline ul li .descr {
   padding-block-end: 1.5rem;
   font-weight: 300;
@@ -2181,6 +2238,7 @@ Responsive Breakpoints
   filter: blur(4px);
   transform: translate(-50%, 50%);
 }
+
 .timeline ul li .title::before {
   bottom: calc(100% + 0.125rem);
 }
@@ -2194,12 +2252,15 @@ Responsive Breakpoints
   .timeline ul {
     grid-template-columns: 1fr var(--line-w) 1fr;
   }
+
   .timeline ul::before {
     grid-column: 2;
   }
+
   .timeline ul li:nth-child(odd) {
     grid-column: 1;
   }
+
   .timeline ul li:nth-child(even) {
     grid-column: 3;
   }
@@ -2218,6 +2279,7 @@ Responsive Breakpoints
     transform: translate(-50%, -50%);
     left: calc(100% + var(--col-gap) + var(--line-w) / 2);
   }
+
   .timeline ul li:nth-child(odd) .date {
     border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
   }
@@ -2227,6 +2289,362 @@ Responsive Breakpoints
   margin-top: 1rem;
   text-align: right;
 }
+
 .timeline .credits a {
   color: var(--color);
 }
+
+
+/*--------------------------------------------------------------
+# Contact Us Section
+--------------------------------------------------------------*/
+
+
+/* Contact Page Specific Styles */
+.contact-page-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  /* Example: Light gray background */
+  font-family: 'Roboto', sans-serif;
+  /* Example: Set default font */
+}
+
+.contact-page-wrapper .contact-page-title {
+  /* More specific selector */
+  background-color: #343a40;
+  /* Example: Dark background for page title */
+}
+
+.contact-page-wrapper .contact-form-container {
+  /* More specific selector */
+  border: 1px solid #dee2e6;
+  /* Example: Add a border to the form container */
+}
+
+.contact-page-wrapper .contact-form-container form {
+  background-color: #fff;
+  /* Example: White background for the form */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-page-wrapper .contact-form-container label {
+  color: #333;
+  /* Example: Dark gray color for labels */
+}
+
+.contact-page-wrapper .contact-form-container input[type="text"],
+.contact-page-wrapper .contact-form-container input[type="email"],
+.contact-page-wrapper .contact-form-container select,
+.contact-page-wrapper .contact-form-container textarea {
+  border-color: #ced4da;
+  /* Example: Light gray border color */
+  box-shadow: none;
+  /* Example: Remove default box shadow */
+}
+
+
+/* contact us page CSS OF FORM  */
+
+
+/* .form-row {
+  margin-bottom: 20px;
+} */
+
+/* 
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+} */
+
+.contact-form-container {
+  display: flex;
+  padding: 30px;
+  /* Add padding to all sides */
+  /* ... (Other styles) ... */
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+  .contact-form-container {
+    flex-direction: column;
+    padding: 10px;
+    /* Reduce padding on smaller screens */
+  }
+}
+
+ontact-page-wrapper .contact-column {
+  /* More specific selector */
+  width: 50%;
+  padding: 0 20px;
+  /* ... (Other styles) ... */
+  font-family: 'Courier New', Courier, monospace;
+  /* Example font, adjust as needed */
+  color: #333;
+  /* Dark gray text color */
+}
+
+.contact-column.content.grid-container {
+  margin: 40px, 20px;
+  padding-top: 20px;
+}
+
+.contact-page-wrapper .contact-column h2 {
+  /* More specific selector */
+  font-size: 2em;
+  /* Large heading size */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-page-wrapper .contact-column p {
+  /* More specific selector */
+  font-size: 1em;
+  /* Regular paragraph size */
+  line-height: 1.6;
+  /* Comfortable line spacing */
+  margin-bottom: 20px;
+}
+
+
+.contact-column {
+  width: 50%;
+  padding: 0 20px;
+  /* Add some space between the columns */
+  /* ... (Other styles for columns) ... */
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+  .contact-form-container {
+    flex-direction: column;
+    /* Stack columns vertically */
+  }
+
+  .contact-column {
+    width: 100%;
+    /* Each column takes full width */
+    padding: 0;
+    /* Remove padding */
+  }
+}
+
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"],
+.contact-form-container select,
+.contact-form-container textarea {
+  width: 100%;
+  /* Keep input fields and labels at 100% width */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.checkbox-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.checkbox-group {
+  display: flex;
+  /* Enable flexbox layout for columns */
+}
+
+.checkbox-column {
+  width: 50%;
+  /* Each column takes 50% width */
+  padding: 0 10px;
+  /* Add some padding between columns */
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+  .checkbox-group {
+    flex-direction: column;
+    /* Stack columns vertically */
+  }
+
+  .checkbox-column {
+    width: 100%;
+    /* Each column takes full width */
+    padding: 0;
+    /* Remove padding */
+  }
+}
+
+.contact-left-section {
+  margin-top: 30px;
+}
+
+
+.submit-button {
+  display: block;
+  /* Change to block for full width */
+  width: 100%;
+  /* Set width to 100% */
+  background-color: #dbdb2d;
+  margin-top: 15px;
+  color: #fff;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #cbfe64;
+}
+
+/*--------------------------------------------------------------
+# Privacy Policy Section
+--------------------------------------------------------------*/
+
+/* CSS Styling (same as Terms of Use page) */
+.privacy-policy {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  color: #333;
+}
+
+.privacy-policy h1,
+.privacy-policy h2 {
+  color: #222;
+}
+
+.privacy-policy h1 {
+  font-size: 2.5em;
+}
+
+.privacy-policy h2 {
+  font-size: 1.8em;
+  margin-top: 1.5em;
+}
+
+.privacy-policy p {
+  margin-bottom: 1em;
+}
+
+.privacy-policy ul {
+  list-style: disc;
+  margin-left: 40px;
+  margin-bottom: 1em;
+}
+
+.privacy-policy a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.privacy-policy a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*--------------------------------------------------------------
+# Terms of Use Section
+--------------------------------------------------------------*/
+
+.term-of-use h1,
+.term-of-use h2 {
+  color: #222;
+  /* Slightly darker heading color */
+}
+
+.term-of-use h1 {
+  font-size: 2.5em;
+}
+
+.term-of-use h2 {
+  font-size: 1.8em;
+  margin-top: 1.5em;
+}
+
+.term-of-use p {
+  margin-bottom: 1em;
+}
+
+.term-of-use ul {
+  list-style: disc;
+  /* Use bullet points for lists */
+  margin-left: 40px;
+  margin-bottom: 1em;
+}
+
+.term-of-use a {
+  color: #007bff;
+  /* Blue link color */
+  text-decoration: none;
+}
+
+.term-of-use a:hover {
+  text-decoration: underline;
+}
+
+.term-of-use{
+  max-width: 800px;
+  /* Limit container width for better readability */
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Transparency Statement Section
+--------------------------------------------------------------*/
+.transparency-statement{
+  max-width: 800px;
+  /* Limit container width for better readability */
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+
+.transparency-statement h1,
+h2 {
+  color: #222;
+}
+
+.transparency-statement h1 {
+  font-size: 2.5em;
+}
+
+.transparency-statement h2 {
+  font-size: 1.8em;
+  margin-top: 1.5em;
+}
+
+.transparency-statement p {
+  margin-bottom: 1em;
+}
+
+.transparency-statement ul {
+  list-style: disc;
+  margin-left: 40px;
+  margin-bottom: 1em;
+}
+
+.transparency-statement a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.transparency-statement a:hover {
+  text-decoration: underline;
+}
+
+
